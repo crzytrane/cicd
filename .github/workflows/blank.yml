@@ -61,4 +61,5 @@ jobs:
         shell: pwsh
         run: |
           write-host "Running integration tests"
+          write-error "Something broke!"
           write-host "Success!" -ForegroundColor Green
