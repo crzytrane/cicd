@@ -68,4 +68,4 @@ jobs:
       - name: Execute script
         # shell: pwsh
         run: |
-          pwsh -command ".\$GITHUB_WORKSPACE\Hello-World.ps1"
+          pwsh -command ".$GITHUB_WORKSPACE\Hello-World.ps1"
