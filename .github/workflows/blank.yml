@@ -38,6 +38,6 @@ jobs:
   run-functional-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: pwsh
       - name: Greeting from powershell!
+        shell: pwsh
         run: write-host "Hello world!"
