@@ -66,5 +66,6 @@ jobs:
           write-host "Success!" -ForegroundColor Green
 
       - name: Execute script
-        shell: pwsh
-        run: .\$($env:GITHUB_WORKSPACE)\Hello-World.ps1
+        # shell: pwsh
+        run: |
+          pwsh -command ".\$GITHUB_WORKSPACE\Hello-World.ps1"
