@@ -38,6 +38,8 @@ jobs:
   run-functional-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Greeting from powershell!
+      - name: Kick off functional tests
         shell: pwsh
-        run: write-host "Hello world!"
+        run: |
+          write-host "Running functional tests"
+          write-host "Success!" -ForegroundColor Green
