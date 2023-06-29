@@ -67,4 +67,4 @@ jobs:
 
       - name: Execute script
         shell: pwsh
-        run: .\$GITHUB_WORKSPACE\Hello-World.ps1
+        run: .\$($env:GITHUB_WORKSPACE)\Hello-World.ps1
