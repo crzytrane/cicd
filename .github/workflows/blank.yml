@@ -66,6 +66,5 @@ jobs:
           write-host "Success!" -ForegroundColor Green
 
       - name: Execute script
-        # shell: pwsh
-        run: |
-          pwsh $GITHUB_WORKSPACE/cicd/Hello-World.ps1
+        shell: pwsh
+        run: $GITHUB_WORKSPACE/cicd/Hello-World.ps1
