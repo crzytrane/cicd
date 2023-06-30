@@ -69,4 +69,4 @@ jobs:
         env: 
           name: Mark Hamilton
         shell: pwsh
-        run: ./$GITHUB_WORKSPACE/cicd/Hello-World.ps1
+        run: &./$GITHUB_WORKSPACE/cicd/Hello-World.ps1
