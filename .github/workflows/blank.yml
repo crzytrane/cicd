@@ -68,5 +68,5 @@ jobs:
       - name: Execute script
         # shell: pwsh
         run: |
-          pwsh -command "ls $($env:GITHUB_WORKSPACE)"
+          pwsh -command "ls $GITHUB_WORKSPACE"
           # pwsh -command ".\$GITHUB_WORKSPACE\Hello-World.ps1"
