@@ -66,5 +66,7 @@ jobs:
           write-host "Success!" -ForegroundColor Green
 
       - name: Execute script
+        env: 
+          name: Mark Hamilton
         shell: pwsh
-        run: $GITHUB_WORKSPACE/cicd/Hello-World.ps1
+        run: ./$GITHUB_WORKSPACE/cicd/Hello-World.ps1
