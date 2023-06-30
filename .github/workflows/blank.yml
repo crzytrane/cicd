@@ -49,6 +49,8 @@ jobs:
   tests:
     name: Quality Assurance
     runs-on: ubuntu-latest
+    env: 
+      name: Mark Hamilton
     # needs: build
     steps:
       - uses: actions/checkout@v3
@@ -63,10 +65,9 @@ jobs:
         shell: pwsh
         run: |
           write-host "Running integration tests"
+          write-warning "Something was weird"
           write-host "Success!" -ForegroundColor Green
 
       - name: Execute script
-        env: 
-          name: Mark Hamilton
         shell: pwsh
         run: "&./$GITHUB_WORKSPACE/cicd/Hello-World.ps1"
